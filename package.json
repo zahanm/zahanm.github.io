@@ -14,10 +14,11 @@
     "node": "~0.6.6"
   },
   "dependencies": {
-    "express": "~2.5.4"
+    "express": "~2.5.4",
+    "forever": "~0.7.5"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node lib/server.js"
+    "start": "forever start -l logs/forever.log -e logs/stderr.log -o logs/stdout.log /node/bin/node lib/server.js"
   }
 }
