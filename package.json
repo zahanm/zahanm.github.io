@@ -1,0 +1,21 @@
+{
+  "author": "Zahan Malkani <zahanm@gmail.com> (http://zahanm.com)",
+  "name": "zahanm.com",
+  "description": "Home for Zahan",
+  "version": "0.0.1",
+  "homepage": "http://zahanm.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zahanm/zahanm.com.git"
+  },
+  "private": true,
+  "main": "lib/server",
+  "engines": {
+    "node": "~0.6.6"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node lib/server.js"
+  }
+}
