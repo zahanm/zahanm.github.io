@@ -19,6 +19,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "forever start -l logs/forever.log -e logs/stderr.log -o logs/stdout.log /node/bin/node lib/server.js"
+    "start": "node lib/server.js"
   }
 }
