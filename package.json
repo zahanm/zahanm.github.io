@@ -19,6 +19,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node lib/server.js"
+    "start": "nohup nice node lib/server.js > logs/stdout.log 2> logs/stderr.log < /dev/null &"
   }
 }
