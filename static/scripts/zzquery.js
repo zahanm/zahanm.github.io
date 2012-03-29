@@ -14,6 +14,9 @@
 
   // TODO set up listeners for 'ready' event
 
+  // Element.prototype.on = Element.prototype.addEventListener;
+  // global.prototype.on = global.prototype.addEventListener;
+
   /**********************************************\
   * Helper methods attached to `zz` global object
   \**********************************************/
