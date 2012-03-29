@@ -1,0 +1,26 @@
+{
+  "higher": [
+    {
+      "school": "Stanford University",
+      "time": "September 2011 - December 2012",
+      "degree": "MS in Computer Science"
+    },
+    {
+      "school": "Stanford University",
+      "time": "September 2008 - June 2012",
+      "degree": "BS in Physics, Minor in Computer Science"
+    }
+  ],
+  "primary": [
+    {
+      "school": "Cathedral and John Connon School",
+      "time": "June 2006 - June 2008",
+      "degree": "Indian School Certificate &mdash; Grade 12"
+    },
+    {
+      "school": "Cathedral and John Connon School",
+      "time": "June 1995 - June 2006",
+      "degree": "Indian Certificate of Secondary Education &mdash; Grade 10"
+    }
+  ]
+}
