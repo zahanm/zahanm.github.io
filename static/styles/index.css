@@ -1,0 +1,11 @@
+footer h6 {
+  display: inline;
+}
+.container-fluid {
+  padding-top: 40px;
+}
+section > .section-head {
+  background: #eeeeee;
+  color: #222222;
+  height: 40px;
+}
