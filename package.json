@@ -16,7 +16,9 @@
   "dependencies": {
     "express": "~2.5.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "coffee-script": "~1.2.0"
+  },
   "scripts": {
     "start": "nohup nice node lib/server.js > logs/stdout.log 2> logs/stderr.log < /dev/null"
   }

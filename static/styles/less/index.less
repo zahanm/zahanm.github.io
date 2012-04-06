@@ -1,0 +1,45 @@
+
+// Bootstrap CSS
+@import "bootstrap.less";
+@import "responsive.less";
+
+@numsections: 1;
+
+footer h6 {
+  display: inline;
+}
+
+.section-head {
+  background: @grayDark;
+  color: @grayLighter;
+  height: @navbarHeight;
+  position: fixed;
+  top: @navbarHeight;
+  right: 0;
+  left: 0;
+  z-index: @zindexFixedNavbar;
+  .opacity(70);
+}
+
+section:first-of-type {
+  margin-top: (@numsections + 1) * @navbarHeight + 10px;
+}
+
+.section-head > * {
+  padding: 11px 10px 11px;
+  margin: 0px;
+}
+
+// Tablets & desktops
+@media (min-width: 768px) {
+  .section-head > *:first-child {
+    margin-left: 30px;
+  }
+}
+
+// Handhelds
+@media (max-width: 767px) {
+  .section-head > *:first-child {
+    margin-left: 10px;
+  }
+}

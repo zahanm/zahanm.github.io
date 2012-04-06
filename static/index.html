@@ -4,7 +4,6 @@
   <title>Zahan Malkani: Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="-77jOjBy2m5yloCr0FaZuZnr7vH1ccaxnr_0pMClbM4" />
-  <link rel="stylesheet" href="/styles/bootstrap.css" type="text/css" media="screen, handheld" charset="utf-8">
   <link rel="stylesheet" href="/styles/index.css" type="text/css" media="screen, handheld" charset="utf-8">
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -16,6 +15,7 @@
 
 <body>
 
+  <!-- navbar -->
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -38,30 +38,24 @@
     </div>
   </div>
 
+  <!-- section myname -->
+
+  <div class="section-head">
+    <h4>Personal</h4>
+  </div>
+
   <section id="myname">
 
-    <div class="row-fluid section-head">
-      <div class="container">
-        <h4>Personal</h4>
-      </div>
-    </div>
+    <div class="container">
 
-    <div class="container-fluid">
+      <div class="row">
 
-      <div class="row-fluid">
-
-        <div class="span2">
-          Nothing
-        </div>
-        <div class="span8">
+        <div class="span8 offset2">
           <div class="hero-unit">
             <h1>Zahan Malkani</h1>
             <p>A useful concept</p>
             <p>More content here</p>
           </div>
-        </div>
-        <div class="span2">
-          Nothing
         </div>
 
       </div>
@@ -69,9 +63,10 @@
 
   </section>
 
-  <footer>
-    <div class="row-fluid">
-      <div class="span12">
+  <!-- footer -->
+  <footer class="container">
+    <div class="row">
+      <div class="span6 offset3">
         <center>
           <h6>
             Powered by <a href="http://nodejs.org">Node.js</a>
