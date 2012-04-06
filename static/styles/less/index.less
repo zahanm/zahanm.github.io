@@ -3,16 +3,15 @@
 @import "bootstrap.less";
 @import "responsive.less";
 
+/*************\
+* Section head
+\*************/
+
 @numsections: 1;
 
-footer h6 {
-  display: inline;
-}
-
 .section-head {
-  background: @grayDark;
+  background: @grayDarker;
   color: @grayLighter;
-  height: @navbarHeight;
   position: fixed;
   top: @navbarHeight;
   right: 0;
@@ -21,12 +20,9 @@ footer h6 {
   .opacity(70);
 }
 
-section:first-of-type {
-  margin-top: (@numsections + 1) * @navbarHeight + 10px;
-}
-
 .section-head > * {
-  padding: 11px 10px 11px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   margin: 0px;
 }
 
@@ -42,4 +38,43 @@ section:first-of-type {
   .section-head > *:first-child {
     margin-left: 10px;
   }
+}
+
+/**********\
+* Section
+\**********/
+
+section:first-of-type {
+  margin-top: (@numsections + 1) * @navbarHeight + 10px;
+}
+
+.hero-unit .thumbnails {
+  .center-block();
+}
+
+.hero-unit .thumbnail {
+  text-align: center;
+  padding: 16px;
+  padding-bottom: 10px;
+
+  p {
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid @grayLight;
+    .border-radius(2px);
+  }
+
+}
+
+/**********\
+* Footer
+\**********/
+
+footer h6 {
+  display: inline;
 }

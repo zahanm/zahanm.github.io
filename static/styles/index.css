@@ -6903,13 +6903,12 @@ a.thumbnail:hover {
     margin-left: 30px;
   }
 }
-footer h6 {
-  display: inline;
-}
+/*************\
+* Section head
+\*************/
 .section-head {
-  background: #333333;
+  background: #222222;
   color: #eeeeee;
-  height: 40px;
   position: fixed;
   top: 40px;
   right: 0;
@@ -6920,11 +6919,9 @@ footer h6 {
   opacity: 0.7;
   filter: alpha(opacity=70);
 }
-section:first-of-type {
-  margin-top: 90px;
-}
 .section-head > * {
-  padding: 11px 10px 11px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   margin: 0px;
 }
 @media (min-width: 768px) {
@@ -6936,4 +6933,44 @@ section:first-of-type {
   .section-head > *:first-child {
     margin-left: 10px;
   }
+}
+/**********\
+* Section
+\**********/
+section:first-of-type {
+  margin-top: 90px;
+}
+.hero-unit .thumbnails {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-unit .thumbnail {
+  text-align: center;
+  padding: 16px;
+  padding-bottom: 10px;
+}
+.hero-unit .thumbnail p {
+  font-size: 16px;
+  margin: 0px;
+}
+.hero-unit .thumbnail img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #999999;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+/**********\
+* Footer
+\**********/
+footer h6 {
+  display: inline;
 }
