@@ -7011,7 +7011,7 @@ section:first-of-type {
 * Footer
 \**********/
 footer {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 footer h6 {
   display: inline;
