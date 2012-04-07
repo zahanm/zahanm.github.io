@@ -6909,10 +6909,11 @@ a.thumbnail:hover {
 .section-head {
   background: #222222;
   color: #eeeeee;
-  top: 40px;
-  right: 0;
+  margin-top: 40px;
+  /*  right: 0;
   left: 0;
-  position: fixed;
+  position: fixed;*/
+
   z-index: 1030;
   opacity: 0.7;
   filter: alpha(opacity=70);
@@ -6981,6 +6982,9 @@ section:first-of-type {
 /**********\
 * Footer
 \**********/
+footer {
+  margin-bottom: 20px;
+}
 footer h6 {
   display: inline;
 }
