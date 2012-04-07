@@ -6909,10 +6909,10 @@ a.thumbnail:hover {
 .section-head {
   background: #222222;
   color: #eeeeee;
-  position: fixed;
   top: 40px;
   right: 0;
   left: 0;
+  position: fixed;
   z-index: 1030;
   opacity: 0.7;
   filter: alpha(opacity=70);
@@ -6940,7 +6940,18 @@ a.thumbnail:hover {
 section:first-of-type {
   margin-top: 90px;
 }
-.hero-unit .thumbnails {
+/************\
+* Thumbnails
+\************/
+.top-and-center {
+  padding: 60px;
+  margin-bottom: 30px;
+  /*background-color: @grayLighter;*/
+
+  /*.border-radius(6px);*/
+
+}
+.thumbnails {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -6948,25 +6959,24 @@ section:first-of-type {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-unit .thumbnail {
+.thumbnails .thumbnail {
   text-align: center;
   padding: 16px;
   padding-bottom: 10px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
 }
-.hero-unit .thumbnail p {
+.thumbnails .thumbnail p {
   font-size: 16px;
   margin: 0px;
 }
-.hero-unit .thumbnail img {
+.thumbnails .thumbnail img {
   width: 100px;
   height: 100px;
-  border: 2px solid #999999;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
 }
 /**********\
 * Footer

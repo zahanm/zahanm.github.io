@@ -12,10 +12,10 @@
 .section-head {
   background: @grayDarker;
   color: @grayLighter;
-  position: fixed;
   top: @navbarHeight;
   right: 0;
   left: 0;
+  position: fixed;
   z-index: @zindexFixedNavbar;
   .opacity(70);
 }
@@ -48,25 +48,36 @@ section:first-of-type {
   margin-top: (@numsections + 1) * @navbarHeight + 10px;
 }
 
-.hero-unit .thumbnails {
-  .center-block();
+/************\
+* Thumbnails
+\************/
+
+.top-and-center {
+  padding: 60px;
+  margin-bottom: 30px;
+  /*background-color: @grayLighter;*/
+  /*.border-radius(6px);*/
 }
 
-.hero-unit .thumbnail {
-  text-align: center;
-  padding: 16px;
-  padding-bottom: 10px;
+.thumbnails {
+  .center-block();
 
-  p {
-    font-size: 16px;
-    margin: 0px;
-  }
+  .thumbnail {
+    text-align: center;
+    padding: 16px;
+    padding-bottom: 10px;
+    .border-radius(16px);
 
-  img {
-    width: 100px;
-    height: 100px;
-    border: 2px solid @grayLight;
-    .border-radius(2px);
+    p {
+      font-size: 16px;
+      margin: 0px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
   }
 
 }
