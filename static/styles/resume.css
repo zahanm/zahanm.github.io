@@ -15,6 +15,10 @@ ul {
 	list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
 .secondary_info {
 	display: none;
 }
@@ -27,9 +31,9 @@ ul {
 	padding: 10px;
 }
 .meta_section:hover {
-	box-shadow: 1px 1px 5px #000;
-	-moz-box-shadow: 1px 1px 5px #000;
-	-webkit-box-shadow: 2px 2px 5px #000;	
+  box-shadow: 1px 1px 5px #000;
+  -moz-box-shadow: 1px 1px 5px #000;
+  -webkit-box-shadow: 2px 2px 5px #000;
 }
 .meta_section_wrap {
 	background: #F9FAFC;
@@ -61,6 +65,3 @@ ul {
 .secondary_info {
 	margin-left: 20px;
 }
-
-
-
