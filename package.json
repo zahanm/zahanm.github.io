@@ -2,7 +2,7 @@
   "author": "Zahan Malkani <zahanm@gmail.com> (http://zahanm.com)",
   "name": "zahanm.com",
   "description": "Home for Zahan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://zahanm.com",
   "repository": {
     "type": "git",
@@ -14,7 +14,9 @@
     "node": "~0.6"
   },
   "dependencies": {
-    "express": "*"
+    "express": "~3.0.3",
+    "pdfkit": "~0.1.9",
+    "trumpet": "~0.3.0"
   },
   "devDependencies": {
     "coffee-script": "*"
