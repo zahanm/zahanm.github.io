@@ -97,3 +97,15 @@ h1, h2, h3, h4, h5, h6 {
 a.github-ribbon:hover {
   color: rgba(255, 255, 255, 0.90);
 }
+
+a.pdf-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  padding: 5px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 0px 5px 3px #999;
+  text-decoration: none;
+}
