@@ -2,7 +2,7 @@
   "author": "Zahan Malkani <zahanm@gmail.com> (http://zahanm.com)",
   "name": "zahanm.com",
   "description": "Home for Zahan",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://zahanm.com",
   "repository": {
     "type": "git",
@@ -16,10 +16,8 @@
   "dependencies": {
     "express": "~3.0.3",
     "pdfkit": "~0.1.9",
-    "cheerio": "~0.10.3"
-  },
-  "devDependencies": {
-    "coffee-script": "*"
+    "cheerio": "~0.10.3",
+    "coffee-script": "1.4.0"
   },
   "scripts": {
     "start": "nohup nice node lib/server.js > logs/stdout.log 2> logs/stderr.log < /dev/null"
