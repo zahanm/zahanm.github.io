@@ -33,13 +33,13 @@
             </h2>
           </div>
           {{#children}}
-          <h4>
-            {{ school }}
-            <small>{{ time }}</small>
-          </h4>
-          <p>
-            {{ degree }}
-          </p>
+            <h4>
+              {{ school }}
+              <small>{{ time }}</small>
+            </h4>
+            {{#degrees}}
+              <p>{{.}}</p>
+            {{/degrees}}
           {{/children}}
         </div>
       </div>

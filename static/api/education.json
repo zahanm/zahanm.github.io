@@ -2,26 +2,20 @@
   "children": [
     {
       "school": "Stanford University",
-      "time": "September 2011 - December 2012",
-      "degree": "MS in Computer Science",
-      "type": "higher"
-    },
-    {
-      "school": "Stanford University",
-      "time": "September 2008 - June 2012",
-      "degree": "BS in Physics, Minor in Computer Science",
+      "time": "September 2008 - December 2012",
+      "degrees": [
+        "MS in Computer Science",
+        "BS in Physics, Minor in Computer Science"
+      ],
       "type": "higher"
     },
     {
       "school": "Cathedral and John Connon School",
-      "time": "June 2006 - June 2008",
-      "degree": "Indian School Certificate - Grade 12",
-      "type": "primary"
-    },
-    {
-      "school": "Cathedral and John Connon School",
-      "time": "June 1995 - June 2006",
-      "degree": "Indian Certificate of Secondary Education - Grade 10",
+      "time": "June 1995 - June 2008",
+      "degrees": [
+        "Indian School Certificate - Grade 12",
+        "Indian Certificate of Secondary Education - Grade 10"
+      ],
       "type": "primary"
     }
   ]
