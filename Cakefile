@@ -4,7 +4,7 @@ path = require('path')
 exec = require('child_process').exec
 
 less_dir = "views/less"
-less_srcs = [ "index.less", "resume2.less" ]
+less_srcs = [ "index.less", "resume.less" ]
 styles_dir = "static/styles"
 
 option '-x', '--compress', 'compress compiled code'
