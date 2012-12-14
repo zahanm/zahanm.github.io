@@ -20,6 +20,7 @@
         <ul class="nav nav-list sidenav">
           <li><a href="#education">Education</a></li>
           <li><a href="#workexp">Work Experience</a></li>
+          <li><a href="#teachlead">Teaching and Leadership</a></li>
         </ul>
       </div>
       <!-- everything else -->
@@ -56,6 +57,26 @@
           <div class="child">
             <h4>
               {{ position }} {{#group}}- {{ group }} {{/group}}- {{ employer }}
+              <small>{{ time }}</small>
+            </h4>
+            <p>
+              {{ desc }}
+            </p>
+          </div>
+          {{/children}}
+        </section>
+        <!-- teaching and leadership -->
+        <section id="teachlead">
+          <div class="page-header">
+            <h2>
+              Teaching and Leadership
+              <small>I've been teaching and leading others</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{ position }} {{#setting}}- {{ setting }} {{/setting}}- {{ backdrop }}
               <small>{{ time }}</small>
             </h4>
             <p>

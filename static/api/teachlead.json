@@ -1,0 +1,49 @@
+{
+  "children": [
+    {
+      "backdrop": "Stanford",
+      "setting": "CS 276",
+      "position": "Teaching Assistant",
+      "time": "Spring 2011",
+      "desc": "I am a TA for the class Information Retrieval and Web Search, that is taught by Chris Manning, Pandu Nayak and Prabhakar Raghavan at Stanford. The course functions as Stanford's introduction to text-based information systems, covering the gamut of related topics, starting at simple retrieval techniques and ending by scalably crawling the web. I am helping with all aspects of running the class, ranging from coming up with interesting and engaging assignments, to helping students with their understanding of the material."
+    },
+    {
+      "backdrop": "Stanford",
+      "position": "Residential Assistant",
+      "time": "September 2011 - June 2012",
+      "desc": "On a team of 17, I am an RA in the EastFlo residence hall. My primary responsibilities include looking after the freshmen who are new to college and Stanford, and helping them settle in. As a staff, we help foster a healthy community in the dorm and try to make everyone feel apreciated and welcome. Along with my fellow RAs, we are personally responsible for our residents' health and well-being, a responsibility I do not take lightly. We also design fun dorm programming activities, like scavenger hunts and games nights."
+    },
+    {
+      "backdrop": "Stanford",
+      "setting": "Physics 91SI",
+      "position": "Teacher and Initiator",
+      "time": "March 2011 - June 2011",
+      "desc": "Together with Alex Ji, I initiated and taught a course, Practical Computing for Scientists at Stanford, aimed at providing students with useful information to write clean and effective software. Targeted at students going into summer research in the natural sciences, where programming plays an ever more important role, we want to provide students with the tools to write better software without them having to major in Computer Science. We provide an introduction to UNIX-like operating systems and use Python as the primary language to learn about data processing and visualization, while learning about other practically useful topics like version control. We are using resources from the Software Carpentry project in our classes."
+    },
+    {
+      "backdrop": "Stanford",
+      "position": "Residential Computer Consultant",
+      "time": "September 2009 - June 2011",
+      "desc": "This is my second year as RCC in the EastFlo residence hall. My job consists of educating residents on all aspects of computing at Stanford, administering the local network and teaching two classes on basic computing and multimedia. I develop and maintain the dorm website eastflo.stanford.edu. As a staff member in a freshman residence hall, I also help plan various programs for the residents."
+    },
+    {
+      "backdrop": "Stanford",
+      "setting": "Hackathon",
+      "position": "The Extraordinaries",
+      "time": "February 2010",
+      "desc": "Hackathon is a 24-hour coding marathon in which programmers give of their time to projects that bring about social good. I worked with a team to make a web app for The Extraordinaries, that serves as their template for their phone-banking missions."
+    },
+    {
+      "backdrop": "Teach For India",
+      "position": "Campus Ambassador",
+      "time": "September 2009 - September 2010",
+      "desc": "A movement that aims to narrow the education gap in India, it is a part of the Teach For All network. My project was to raise awareness for its two-year fellowship program in education."
+    },
+    {
+      "backdrop": "Microsoft IT Academy Center",
+      "position": "'Project Shiksha'",
+      "time": "Winter 2007",
+      "desc": "Undertook an internship in this Microsoft-initiated IT literacy training program for Government school teachers under Microsoft’s global ‘Partners in Learning’ initiative. I spent the internship educating the teachers on how to use the basic functionality of computers to enrich the teaching experience in their classrooms, no matter their subject."
+    }
+  ]
+}

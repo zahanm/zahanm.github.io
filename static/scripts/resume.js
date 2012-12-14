@@ -3,7 +3,8 @@
 
   fetches = [
     { loc: "/api/education.json", dest: "#education" },
-    { loc: "/api/workexp.json", dest: "#workexp" }
+    { loc: "/api/workexp.json", dest: "#workexp" },
+    { loc: "/api/teachlead.json", dest: "#teachlead" },
   ];
 
   fetches.forEach(function (f) {
