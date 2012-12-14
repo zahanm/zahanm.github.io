@@ -1,10 +1,12 @@
 
 (function (global) {
+  "use strict";
 
-  fetches = [
+  var fetches = [
     { loc: "/api/education.json", dest: "#education" },
     { loc: "/api/workexp.json", dest: "#workexp" },
     { loc: "/api/teachlead.json", dest: "#teachlead" },
+    { loc: "/api/achieve.json", dest: "#achieve" }
   ];
 
   fetches.forEach(function (f) {

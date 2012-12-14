@@ -1,0 +1,11 @@
+{
+  "children": [
+    {
+      "competition": "Data Mining Competition",
+      "placement": 2,
+      "position": "Second Place",
+      "time": "November 2010 - December 2010",
+      "desc": "Placed second in a data mining competition to build an intelligent predictor of wine prices, given certain sparsely populated features about the wines. Our predictor used R's advanced data analysis features and Python's excellent regular expression library."
+    }
+  ]
+}

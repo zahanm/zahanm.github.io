@@ -21,6 +21,7 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#workexp">Work Experience</a></li>
           <li><a href="#teachlead">Teaching and Leadership</a></li>
+          <li><a href="#achieve">Achievements</a></li>
         </ul>
       </div>
       <!-- everything else -->
@@ -77,6 +78,26 @@
           <div class="child">
             <h4>
               {{ position }} {{#setting}}- {{ setting }} {{/setting}}- {{ backdrop }}
+              <small>{{ time }}</small>
+            </h4>
+            <p>
+              {{ desc }}
+            </p>
+          </div>
+          {{/children}}
+        </section>
+        <!-- achievements -->
+        <section id="achieve">
+          <div class="page-header">
+            <h2>
+              Achievements
+              <small>I've been achieving things</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{ competition }} - {{ position }}
               <small>{{ time }}</small>
             </h4>
             <p>
