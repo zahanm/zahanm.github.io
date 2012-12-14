@@ -1,0 +1,14 @@
+{
+  "children": [
+    {
+      "label": "Most experienced",
+      "skill": "Java, R, Python, Javascript",
+      "desc": "I have worked on numerous projects for mobile, web and application platforms. This includes apps for the Android operating system and web apps that use HTML5 functionality."
+    },
+    {
+      "label": "Experienced",
+      "skill": "Ruby, C, C++, IDL",
+      "desc": "Implemented a number of projects in and out of various classes including a substitute for the heap allocator in C."
+    }
+  ]
+}

@@ -22,6 +22,8 @@
           <li><a href="#workexp">Work Experience</a></li>
           <li><a href="#teachlead">Teaching and Leadership</a></li>
           <li><a href="#achieve">Achievements</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#references">References</a></li>
         </ul>
       </div>
       <!-- everything else -->
@@ -105,6 +107,38 @@
             </p>
           </div>
           {{/children}}
+        </section>
+        <!-- skills -->
+        <section id="skills">
+          <div class="page-header">
+            <h2>
+              Skills
+              <small>I've am skilled at things</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{ skill }}
+              <small>{{ label }}</small>
+            </h4>
+            <p>
+              {{ desc }}
+            </p>
+          </div>
+          {{/children}}
+        </section>
+        <!-- references -->
+        <section id="references">
+          <div class="page-header">
+            <h2>
+              References
+              <small>People who refer me to others</small>
+            </h2>
+          </div>
+          <div class="child">
+            <h4>Available on request</h4>
+          </div>
         </section>
       </div>
     </div>

@@ -6,7 +6,8 @@
     { loc: "/api/education.json", dest: "#education" },
     { loc: "/api/workexp.json", dest: "#workexp" },
     { loc: "/api/teachlead.json", dest: "#teachlead" },
-    { loc: "/api/achieve.json", dest: "#achieve" }
+    { loc: "/api/achieve.json", dest: "#achieve" },
+    { loc: "/api/skills.json", dest: "#skills" }
   ];
 
   fetches.forEach(function (f) {
