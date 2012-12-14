@@ -13,6 +13,7 @@
   </script>
 </head>
 <body>
+
   <div class="container">
     <div class="row">
       <!-- table of contents -->
@@ -24,6 +25,12 @@
           <li><a href="#achieve">Achievements</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#references">References</a></li>
+          <li class="divider"></li>
+          <li style="text-align: center;">
+            <a href="/resume.pdf" class="btn" style="display: inline-block">
+              Generate PDF
+            </a>
+          </li>
         </ul>
       </div>
       <!-- everything else -->
@@ -122,9 +129,12 @@
               {{ skill }}
               <small>{{ label }}</small>
             </h4>
-            <p>
-              {{ desc }}
-            </p>
+            {{#descs}}
+            <p>{{{.}}}</p>
+            {{/descs}}
+            {{^descs}}
+            <p>{{{ desc }}}</p>
+            {{/descs}}
           </div>
           {{/children}}
         </section>

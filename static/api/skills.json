@@ -1,13 +1,21 @@
 {
   "children": [
     {
-      "label": "Most experienced",
-      "skill": "Java, R, Python, Javascript",
-      "desc": "I have worked on numerous projects for mobile, web and application platforms. This includes apps for the Android operating system and web apps that use HTML5 functionality."
+      "label": "Very experienced",
+      "skill": "HTML, Javascript",
+      "descs": [
+        "I have worked on projects for mobile and web platforms. This includes numerous web apps that use HTML5 functionality.",
+        "Check out the <a href=\"https://github.com/zahanm/zahanm.com\">source</a> for this site, with <a href=\"http://nodejs.org\">Node.js</a>, PDF generation and client-side rendering."
+      ]
+    },
+    {
+      "skill": "Python, R",
+      "label": "Very experienced",
+      "desc": "As you can see from my <a href=\"https://github.com/zahanm\">projects</a> on Github, I have worked on many projects that use scripting languages for purposes as diverse as data analysis, machine learning and web servers."
     },
     {
       "label": "Experienced",
-      "skill": "Ruby, C, C++, IDL",
+      "skill": "Java, Ruby, C, C++, IDL",
       "desc": "Implemented a number of projects in and out of various classes including a substitute for the heap allocator in C."
     }
   ]
