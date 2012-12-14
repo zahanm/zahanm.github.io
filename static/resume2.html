@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>Zahan Malkani: Resume</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/resume2.css">
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -12,18 +13,40 @@
   </script>
 </head>
 <body>
-  <!-- education -->
-  <div class="page-header">
-    Education
-    <small>I've been learning some things</small>
+  <div class="container">
+    <div class="row">
+      <!-- table of contents -->
+      <div class="span2">
+        <ul class="nav nav-list sidenav">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#workexp">Work Experience</a></li>
+        </ul>
+      </div>
+      <!-- everything else -->
+      <div class="span10">
+        <!-- education -->
+        <div id="education">
+          <div class="page-header">
+            <h2>
+              Education
+              <small>I've been learning stuff</small>
+            </h2>
+          </div>
+          {{#children}}
+          <h4>
+            {{ school }}
+            <small>{{ time }}</small>
+          </h4>
+          <p>
+            {{ degree }}
+          </p>
+          {{/children}}
+        </div>
+      </div>
+    </div>
   </div>
-  <h2>
-    Stanford University
-    <small>September 2008</small>
-  </h2>
-  <p>
-    Masters in Computer Science
-  </p>
+  <script src="/scripts/mustache.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/scripts/zzquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="/scripts/resume.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
