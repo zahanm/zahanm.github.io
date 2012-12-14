@@ -29,6 +29,27 @@
     // TODO debounce this often called function
   };
 
+  /*
+   * Fetches remote json
+   * cb's first argument should be error
+   */
+  zz.json = function (loc, cb) {
+    var xhr = new global.XMLHttpRequest();
+    xhr.open('GET', loc, true);
+    xhr.overrideMimeType( "application/json" );
+    xhr.send();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          var data = JSON.parse(xhr.responseText);
+          cb(null, data);
+        } else {
+          cb(xhr);
+        }
+      }
+    }
+  };
+
   global.zz = zz;
 
 })(window || global);
