@@ -25,7 +25,7 @@
       <!-- everything else -->
       <div class="span10">
         <!-- education -->
-        <div id="education">
+        <section id="education">
           <div class="page-header">
             <h2>
               Education
@@ -33,6 +33,7 @@
             </h2>
           </div>
           {{#children}}
+          <div class="child">
             <h4>
               {{ school }}
               <small>{{ time }}</small>
@@ -40,8 +41,29 @@
             {{#degrees}}
               <p>{{.}}</p>
             {{/degrees}}
+          </div>
           {{/children}}
-        </div>
+        </section>
+        <!-- work experience -->
+        <section id="workexp">
+          <div class="page-header">
+            <h2>
+              Work Experience
+              <small>I've been doing stuff</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{ position }} {{#group}}- {{ group }} {{/group}}- {{ employer }}
+              <small>{{ time }}</small>
+            </h4>
+            <p>
+              {{ desc }}
+            </p>
+          </div>
+          {{/children}}
+        </section>
       </div>
     </div>
   </div>
