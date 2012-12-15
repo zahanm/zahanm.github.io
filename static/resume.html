@@ -76,11 +76,12 @@
           {{#children}}
           <div class="child">
             <h4>
-              {{ position }} {{#group}}- {{ group }} {{/group}}- {{ employer }}
+              {{#group}}{{ position }} - {{ group }} - {{ employer }}{{/group}}
+              {{^group}}{{ position }} - {{ employer }}{{/group}}
               <small>{{ time }}</small>
             </h4>
             <p>
-              {{ desc }}
+              {{{ desc }}}
             </p>
           </div>
           {{/children}}
@@ -96,11 +97,12 @@
           {{#children}}
           <div class="child">
             <h4>
-              {{ position }} {{#setting}}- {{ setting }} {{/setting}}- {{ backdrop }}
+              {{#setting}}{{position}} - {{setting}} - {{backdrop}}{{/setting}}
+              {{^setting}}{{position}} - {{backdrop}}{{/setting}}
               <small>{{ time }}</small>
             </h4>
             <p>
-              {{ desc }}
+              {{{ desc }}}
             </p>
           </div>
           {{/children}}
@@ -120,7 +122,7 @@
               <small>{{ time }}</small>
             </h4>
             <p>
-              {{ desc }}
+              {{{ desc }}}
             </p>
           </div>
           {{/children}}
@@ -130,7 +132,7 @@
           <div class="page-header">
             <h2>
               Skills
-              <small>fyi, this list is by no means comprehensive</small>
+              <small>fyi, this is by no means comprehensive</small>
             </h2>
           </div>
           {{#children}}
@@ -153,7 +155,7 @@
           <div class="page-header">
             <h2>
               References
-              <small>if you still don't trust my word</small>
+              <small>if you still don't trust me</small>
             </h2>
           </div>
           <div class="child">
