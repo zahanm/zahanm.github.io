@@ -15,9 +15,35 @@ h1, h2, h3, h4 {
 
 // page navlist
 
+@sidenavspan: 3;
+
 .nav.sidenav {
   position: fixed;
   top: 40px;
+  width: @gridColumnWidth * @sidenavspan - 30;
+}
+
+@media (min-width: 1200px) {
+  .nav.sidenav {
+    position: fixed;
+    top: 40px;
+    width: @gridColumnWidth1200 * @sidenavspan - 30;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .nav.sidenav {
+    position: fixed;
+    top: 40px;
+    width: @gridColumnWidth768 * @sidenavspan - 30;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav.sidenav {
+    position: static;
+    width: initial;
+  }
 }
 
 // child

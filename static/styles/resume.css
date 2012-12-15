@@ -9266,6 +9266,27 @@ h4 {
 .nav.sidenav {
   position: fixed;
   top: 40px;
+  width: 150px;
+}
+@media (min-width: 1200px) {
+  .nav.sidenav {
+    position: fixed;
+    top: 40px;
+    width: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .nav.sidenav {
+    position: fixed;
+    top: 40px;
+    width: 96px;
+  }
+}
+@media (max-width: 767px) {
+  .nav.sidenav {
+    position: static;
+    width: initial;
+  }
 }
 section > .child {
   margin-bottom: 15px;
