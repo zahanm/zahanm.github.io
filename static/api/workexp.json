@@ -11,32 +11,32 @@
       "group": "Social Computing",
       "position": "Visiting Student",
       "time": "Summer 2012",
-      "desc": "I am continuing work with Professor Sep Kamvar in the Social Computing group. We are currently building the Dog programming language, which is made to emphasize the role of humans in computational systems. We are exploring the possibilities that this affords to use human and artificial intelligence as part of hybrid approaches to building smarter applications. I'm helping design the language to be as accessible to those without programming experience, and am also building out the ecosystem of supporting libraries and sample applications."
+      "desc": "I am continuing work with Professor <a href=\"http://kamvar.org\">Sep Kamvar</a> in the <a href=\"http://www.media.mit.edu/research/groups/social-computing\">Social Computing group</a> of the <a href=\"http://media.mit.edu\">Media Lab</a>. We are currently building the <a href=\"http://dog-lang.org\">Dog</a> programming language, which is made to emphasize the role of humans in computational systems. We are exploring the possibilities that this affords to use human and artificial intelligence as part of hybrid approaches to building smarter applications. I'm helping design the language to be as accessible to those without programming experience, and am also building out the ecosystem of supporting libraries and sample applications."
     },
     {
       "employer": "Babelon",
       "position": "Co-founder and Technical Lead",
       "time": "Spring 2012",
-      "desc": "StartX, the Stanford student startup accelerator, chose Babelon to be a part of their Spring 2012 batch of companies. We worked on solving the problems of natural language translation by focussing on extracting meaning from unstructured text. Using the games with a purpose approach, I co-developed an experiment in lie detection that we launched as The Detection Game."
+      "desc": "<a href=\"http://startx.stanford.edu/\">StartX</a>, the Stanford student startup accelerator, chose Babelon to be a part of their Spring 2012 batch of companies. We worked on solving the problems of natural language translation by focussing on extracting meaning from unstructured text. Using the games with a purpose approach, I co-developed an experiment in lie detection that we launched as <a href=\"http://lietome.babelon.co/\">The Detection Game</a>."
     },
     {
       "employer": "Stanford",
       "group": "Social Computing",
       "position": "Research Assistant",
       "time": "Spring 2011 - Summer 2012",
-      "desc": "I am working with Professor Sep Kamvar of the MIT Media Lab on questions of computation using distributed intelligence systems. We are currently working on a platform to make such social computing easy and accessible to developers. Our research was published at the ACM conference UIST 2011, where we presented our implementation results."
+      "desc": "I am working with Professor <a href=\"http://kamvar.org\">Sep Kamvar</a> of the <a href=\"http://media.mit.edu\">MIT Media Lab</a> on questions of computation using distributed intelligence systems. We are currently working on a platform to make such social computing easy and accessible to developers. Our research was published at the ACM conference <a href=\"http://www.acm.org/uist/uist2011/\">UIST 2011</a>, where we presented our <a href=\"http://www.stanford.edu/~zahanm/papers/jabberwocky.pdf\">implementation results</a>."
     },
     {
       "employer": "Facebook",
       "position": "Software Engineering Intern",
       "time": "Summer 2011",
-      "desc": "I worked as a software engineer at Facebook with shiny, new Javascript MVC frameworks on client-side web app development. Specifically, I worked on the (now open-sourced) Powereditor that lets advertisers manage their ad campaigns in bulk, with advanced offline and exporting capabilities. The unprecedented freedom I was afforded to develop this app really helped me grow as an individual and an engineer."
+      "desc": "I worked as a software engineer at Facebook with shiny, new Javascript MVC frameworks on client-side web app development. Specifically, I worked on the (now open-sourced) <a href=\"https://github.com/facebook/powereditor\">Powereditor</a> that lets advertisers manage their ad campaigns in bulk, with advanced offline and exporting capabilities. The unprecedented freedom I was afforded to develop this app really helped me grow as an individual and an engineer."
     },
     {
       "employer": "Verbling",
       "position": "Technical Lead",
       "time": "Spring 2011",
-      "desc": "A team of four Stanford students produced a language education platform that focusses on connecting students around the world who are separated by language barriers. I helped create Verbling's first prototype prior to their joining a Y Combinator session."
+      "desc": "A team of four Stanford students produced a language education platform that focusses on connecting students around the world who are separated by language barriers. I helped create <a href=\"http://verbling.com\">Verbling's</a> first prototype prior to their joining a <a href=\"http://ycombinator.com/\">Y Combinator</a> session."
     },
     {
       "employer": "Intern",
