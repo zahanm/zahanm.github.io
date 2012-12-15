@@ -18,12 +18,12 @@ task 'css', 'build css from less bootstrap', (options) ->
     lessc = "lessc"
     if fs.existsSync "./node_modules/.bin/lessc"
       lessc = "./node_modules/.bin/lessc"
-    command = "#{lessc} #{less_dir}/#{src} > #{styles_dir}/#{fname}.css"
+    command = "#{lessc} #{less_dir}/#{src} #{styles_dir}/#{fname}.css"
     console.info command
     exec command, (err, stdo, stde) ->
       console.error err, stde, stdo if err != null
     if options.compress
-      command = "#{lessc} --compress #{less_dir}/#{src} > #{styles_dir}/#{fname}.min.css"
+      command = "#{lessc} --compress #{less_dir}/#{src} #{styles_dir}/#{fname}.min.css"
       console.info command
       exec command, (err, stdo, stde) ->
         console.error err, stde, stdo if err != null
@@ -36,7 +36,7 @@ task 'deploy', "deploy app to heroku", (options) ->
     console.error String(buf)
   git.on "exit", (excode) ->
     console.error "Error in git process" if excode != 0
-    heroku = spawn "heroku", [ "run", "./node_modules/.bin/cake", "css" ]
+    heroku = spawn "heroku", [ "run", "./node_modules/.bin/cake css" ]
     heroku.stdout.on "data", (buf) ->
       console.log String(buf)
     heroku.stderr.on "data", (buf) ->
