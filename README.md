@@ -1,18 +1,19 @@
 
-Really?
+Deets
 =======
 
 It's a personal homepage.
-Oh, and I love Github.
+Oh, and I &lt;3 Github.
 
 Techie details
 ==============
 
 - [nodejs](http://nodejs.org)
+- [pdfkit](http://pdfkit.org/)
+- [mustache.js](https://github.com/janl/mustache.js)
 
 Next Steps
 ==========
 
-- bootstrap for styles on resume
-- pdf for resume
 - code projects on resume
+
