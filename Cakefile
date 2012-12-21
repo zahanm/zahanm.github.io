@@ -6,7 +6,7 @@ exec = child_process.exec
 spawn = child_process.spawn
 
 less_dir = "views/less"
-less_srcs = [ "index.less", "resume.less" ]
+less_srcs = [ "index.less", "resume.less", "news-malk2012.less" ]
 styles_dir = "static/styles"
 
 option '-x', '--compress', 'compress compiled code'
