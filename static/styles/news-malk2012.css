@@ -9254,3 +9254,24 @@ a.badge:hover {
     overflow: visible !important;
   }
 }
+body {
+  background: #eee;
+  font-size: 15px;
+}
+.container {
+  background: white;
+  -webkit-box-shadow: 0 0 20px 10px #aaaaaa;
+  -moz-box-shadow: 0 0 20px 10px #aaaaaa;
+  box-shadow: 0 0 20px 10px #aaaaaa;
+  -webkit-box-shadow: 0 0 20px 10px #aaaaaa;
+  -moz-box-shadow: 0 0 20px 10px #aaaaaa;
+  box-shadow: 0 0 20px 10px #aaaaaa;
+}
+.thumbnail {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail img {
+  width: 100%;
+}
