@@ -5,7 +5,8 @@ child_process = require('child_process')
 exec = child_process.exec
 spawn = child_process.spawn
 
-s3 = require("s3")
+s3 = require('s3')
+ProgressBar = require('progress')
 
 less_dir = "views/less"
 less_srcs = [ "index.less", "resume.less", "news-malk2012.less" ]
@@ -36,26 +37,34 @@ task 'deploy', "deploy app to heroku", (options) ->
     console.error String(buf)
   git.on "exit", (excode) ->
     console.error "Error in git process" if excode != 0
+    invoke 'publish'
 
 task 'publish', "publish static/img on s3", (options) ->
   aws = JSON.parse fs.readFileSync("lib/aws.json")
   s3client = s3.createClient(aws)
   baseLocal = "static/img"
   files = allFilesIn baseLocal
+  bar = new ProgressBar 'Publishing [:bar] :percent :etas', total: files.length
+  outBuffer = []
   next = () ->
     if files.length > 0
       f = files.pop()
       uploader = s3client.upload path.join(baseLocal, f), f
       uploader.on 'error', (err) ->
-        console.error "!: #{f}"
+        outBuffer.push "!: #{f}"
+        bar.tick 1
         next()
       uploader.on 'progress', (amountDone, amountTotal) ->
         true
       uploader.on 'end', () ->
-        console.log "✓: #{f}"
+        outBuffer.push "✓: #{f}"
+        bar.tick 1
         next()
     else
-      console.log "Published on s3"
+      bar.tick 1
+      console.log()
+      console.log outBuffer.join('\n')
+      console.log "--- Finished pushing to s3 ---"
   next()
 
 ignoreFiles = [
