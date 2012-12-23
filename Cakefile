@@ -40,11 +40,21 @@ task 'deploy', "deploy app to heroku", (options) ->
     invoke 'publish'
 
 task 'publish', "publish static/img on s3", (options) ->
+  baseLocal = "static/img"
+  lastpushed = new Date 0
+  if fs.existsSync path.join(baseLocal, ignoreFiles[0])
+    lastpushed = new Date fs.readFileSync path.join(baseLocal, ignoreFiles[0])
+  files = allFilesModAfter baseLocal, lastpushed
+  if files.length <= 0
+    console.log "--- No update needed ---"
+    return
   aws = JSON.parse fs.readFileSync("lib/aws.json")
   s3client = s3.createClient(aws)
-  baseLocal = "static/img"
-  files = allFilesIn baseLocal
-  bar = new ProgressBar 'Publishing [:bar] :percent :etas', total: files.length
+  bar = new ProgressBar 'Publishing [:bar] :percent :etas', {
+    total: files.length
+    incomplete: ' '
+    width: 20
+  }
   outBuffer = []
   next = () ->
     if files.length > 0
@@ -57,31 +67,34 @@ task 'publish', "publish static/img on s3", (options) ->
       uploader.on 'progress', (amountDone, amountTotal) ->
         true
       uploader.on 'end', () ->
-        outBuffer.push "✓: #{f}"
+        outBuffer.push "+: #{f}"
         bar.tick 1
         next()
     else
       bar.tick 1
       console.log()
       console.log outBuffer.join('\n')
+      now = new Date
+      fs.writeFileSync path.join(baseLocal, ignoreFiles[0]), now.toISOString()
       console.log "--- Finished pushing to s3 ---"
   next()
 
 ignoreFiles = [
+  "lastpushed.txt"
   ".DS_Store"
   ".gitignore"
 ]
 
-allFilesIn = (base) ->
+allFilesModAfter = (base, after) ->
   contained = fs.readdirSync(base)
   files = contained.filter (f) ->
     info = fs.statSync path.join base, f
-    info.isFile() and f not in ignoreFiles
+    info.isFile() and info.ctime > after and f not in ignoreFiles
   dirs = contained.filter (f) ->
     info = fs.statSync path.join base, f
     info.isDirectory()
   dirs.forEach (d) ->
-    within = allFilesIn path.join base, d
+    within = allFilesModAfter path.join base, d
     files.push.apply files, within.map (w) ->
       path.join d, w
   files
