@@ -1,4 +1,3 @@
-
 fs = require('fs')
 path = require('path')
 child_process = require('child_process')
@@ -48,6 +47,10 @@ task 'publish', "publish static/img on s3", (options) ->
   if files.length <= 0
     console.log "--- No update needed ---"
     return
+  # credentials needed:
+  #   - key
+  #   - secret
+  #   - bucket
   aws = JSON.parse fs.readFileSync("lib/aws.json")
   s3client = s3.createClient(aws)
   bar = new ProgressBar 'Publishing [:bar] :percent :etas', {
