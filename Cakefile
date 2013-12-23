@@ -52,6 +52,8 @@ task 'publish', "publish static/img on s3", (options) ->
   #   - secret
   #   - bucket
   aws = JSON.parse fs.readFileSync("lib/aws.json")
+  aws['key'] ?= process.env['AWS_ACCESS_KEY_ID']
+  aws['secret'] ?= process.env['AWS_SECRET_ACCESS_KEY']
   s3client = s3.createClient(aws)
   bar = new ProgressBar 'Publishing [:bar] :percent :etas', {
     total: files.length
@@ -82,6 +84,7 @@ task 'publish', "publish static/img on s3", (options) ->
       console.log "--- Finished pushing to s3 ---"
   next()
 
+# keep the order stable, 'publish' depends on it
 ignoreFiles = [
   "lastpushed.txt"
   ".DS_Store"
