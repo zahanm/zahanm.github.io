@@ -8,14 +8,15 @@ s3 = require('s3')
 ProgressBar = require('progress')
 
 less_dir = "views/less"
-less_srcs = [ "index.less", "resume.less", "news-malk2012.less" ]
+less_srcs = [ "index.less", "resume.less", "malk-news.less" ]
 styles_dir = "static/styles"
 lessc = "lessc"
 
 option '-x', '--compress', 'compress compiled code'
 
 task 'css', 'build css from less bootstrap', (options) ->
-  fs.mkdir styles_dir
+  unless fs.existsSync styles_dir
+    fs.mkdirSync styles_dir
   for src in less_srcs
     fname = path.basename src, '.less'
     command = "#{lessc} #{less_dir}/#{src} #{styles_dir}/#{fname}.css"
