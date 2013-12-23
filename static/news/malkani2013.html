@@ -5,6 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/styles/malk-news.css">
+  <link rel="stylesheet" type="text/css" href="/styles/lightbox.css" />
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-20019295-1']);
@@ -20,7 +21,9 @@
           <h2>Malkani Newsletter: 2013</h2>
         </div>
         <div class="thumbnail portrait">
-          <img src="/img/news/2013/dog.jpg">
+          <a href="/img/news/2013/dog-big.jpg" data-lightbox="news" title="Cleo">
+            <img src="/img/news/2013/dog-small.jpg">
+          </a>
         </div>
       </div>
     </section>
@@ -73,7 +76,9 @@
         <p>In January, the ‘fearsome foursome’ from Modern School.  Amita, Anamika, Nomi and Bina met in Trivandrum at the wedding of Bina’s daughter, Malu. It was the first time that the four were together with kids in tow. Only Vivan missed out, as he had school examinations at the time..</p>
         <p>In March a girls trip to Tadoba, a game sanctuary in Maharashtra, took place with great tiger sightings, as you can see!</p>
         <div class="thumbnail">
-          <img src="/img/news/2013/tiger.jpg">
+          <a href="/img/news/2013/tiger-big.jpg" data-lightbox="news" title="Tigers!">
+            <img src="/img/news/2013/tiger-small.jpg">
+          </a>
         </div>
         <p>Unfortunately, her diabetes is still playing up, so she’s been conscientious about enacting lifestyle changes to help. That hasn’t kept her from an active life though with another short work trip to the south of France and London in July.</p>
       </div>
@@ -115,6 +120,8 @@
       </div>
     </section>
   </div>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/scripts/lightbox-2.6.min.js"></script>
   <script type="text/javascript" charset="utf-8">
     // Google Analytics
     var ga = document.createElement('script'); ga.type = 'text/javascript';
