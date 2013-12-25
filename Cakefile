@@ -5,7 +5,6 @@ exec = child_process.exec
 spawn = child_process.spawn
 
 s3 = require('s3')
-ProgressBar = require('progress')
 
 less_dir = "views/less"
 less_srcs = [ "index.less", "resume.less", "malk-news.less" ]
@@ -31,10 +30,8 @@ task 'css', 'build css from less bootstrap', (options) ->
 
 task 'deploy', "deploy app to heroku", (options) ->
   git = spawn "git", [ "push", "heroku", "master" ]
-  git.stdout.on "data", (buf) ->
-    console.log String(buf)
-  git.stderr.on "data", (buf) ->
-    console.error String(buf)
+  git.stdout.pipe process.stdout
+  git.stderr.pipe process.stderr
   git.on "exit", (excode) ->
     console.error "Error in git process" if excode != 0
     invoke 'publish'
@@ -56,30 +53,20 @@ task 'publish', "publish static/img on s3", (options) ->
   aws['key'] ?= process.env['AWS_ACCESS_KEY_ID']
   aws['secret'] ?= process.env['AWS_SECRET_ACCESS_KEY']
   s3client = s3.createClient(aws)
-  bar = new ProgressBar 'Publishing [:bar] :percent :etas', {
-    total: files.length
-    incomplete: ' '
-    width: 20
-  }
-  outBuffer = []
+  console.log "#{files.length} files to upload"
   next = () ->
     if files.length > 0
       f = files.pop()
       uploader = s3client.upload path.join(baseLocal, f), f
       uploader.on 'error', (err) ->
-        outBuffer.push "!: #{f}"
-        bar.tick 1
+        console.error "!: #{f} | #{err}"
         next()
       uploader.on 'progress', (amountDone, amountTotal) ->
         true
       uploader.on 'end', () ->
-        outBuffer.push "+: #{f}"
-        bar.tick 1
+        console.log "+: #{f}"
         next()
     else
-      bar.tick 1
-      console.log()
-      console.log outBuffer.join('\n')
       now = new Date
       fs.writeFileSync path.join(baseLocal, ignoreFiles[0]), now.toISOString()
       console.log "--- Finished pushing to s3 ---"
