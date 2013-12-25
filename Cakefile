@@ -101,7 +101,7 @@ allFilesModAfter = (base, after) ->
     info = fs.statSync path.join base, f
     info.isDirectory()
   dirs.forEach (d) ->
-    within = allFilesModAfter path.join base, d
+    within = allFilesModAfter path.join(base, d), after
     files.push.apply files, within.map (w) ->
       path.join d, w
   files
