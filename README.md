@@ -16,4 +16,3 @@ Next Steps
 ==========
 
 - code projects on resume
-- Add Strava link
