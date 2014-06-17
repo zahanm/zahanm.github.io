@@ -7,7 +7,7 @@ spawn = child_process.spawn
 s3 = require('s3')
 
 less_dir = "views/less"
-less_srcs = [ "index.less", "resume.less", "malk-news.less" ]
+less_srcs = [ "index.less", "resume.less", "malk-news.less", "sf.less" ]
 styles_dir = "static/styles"
 lessc = "lessc"
 
