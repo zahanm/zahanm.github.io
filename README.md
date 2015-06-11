@@ -1,18 +1,5 @@
 
-Deets
-=======
+I &lt;3 Github.
 
-It's a personal homepage.
-Oh, and I &lt;3 Github.
-
-Techie details
-==============
-
-- [nodejs](http://nodejs.org)
-- [pdfkit](http://pdfkit.org/)
-- [mustache.js](https://github.com/janl/mustache.js)
-
-Next Steps
-==========
-
-- code projects on resume
+Uses [node](http://nodejs.org) to run the server.
+You can probably tell more by looking at the code.

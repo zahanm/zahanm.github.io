@@ -15,9 +15,7 @@
     "npm": "~1.1"
   },
   "dependencies": {
-    "express": "~3.0.3",
-    "pdfkit": "~0.1.9",
-    "cheerio": "~0.10.3"
+    "express": "~3.0.3"
   },
   "devDependencies": {
     "coffee-script": "~1.4.0",
