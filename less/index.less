@@ -1,4 +1,7 @@
 
+@tablet-width: 940px;
+@mobile-width: 450px;
+
 body {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
@@ -20,11 +23,17 @@ a:hover {
 
   background-color: black;
   color: white;
+
+  padding-top: 80px;
 }
 
 .intro {
   font-size: 72px;
-  line-height: 22px;
+
+  p {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
 }
 
 .social {
@@ -34,4 +43,16 @@ a:hover {
   align-items: center;
 
   font-size: 36px;
+}
+
+@media all and (max-width: @tablet-width) {
+  .intro {
+    font-size: 48px;
+  }
+}
+
+@media all and (max-width: @mobile-width) {
+  .intro {
+    font-size: 36px;
+  }
 }
