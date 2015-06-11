@@ -31,6 +31,7 @@ a:hover {
 
 .intro {
   font-size: 72px;
+  margin-bottom: 40px;
 
   p {
     margin-top: 0.2em;
@@ -49,12 +50,22 @@ a:hover {
 
 @media all and (max-width: @tablet-width) {
   .intro {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 
 @media all and (max-width: @mobile-width) {
+  .page {
+    flex-flow: column;
+    padding-top: 40px;
+  }
+
   .intro {
-    font-size: 36px;
+    font-size: 28px;
+  }
+
+  .social {
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
 }
