@@ -3,14 +3,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     less: {
-      legacy: {
-        options: {},
-        files: {
-          "css/resume.css": "less/resume.less",
-          "css/sf.css": "less/sf.less",
-          "css/malk-news.css": "less/malk-news.less"
-        }
-      },
       hotness: {
         options: {
           plugins: [
@@ -24,7 +16,7 @@ module.exports = function(grunt) {
     },
     watch: {
       dev: {
-        files: ['styles/index.less'],
+        files: ['less/*.less'],
         tasks: ['less:hotness'],
         options: {
           spawn: false
