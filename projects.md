@@ -1,9 +1,9 @@
 == Projects ==
 
 SMS Auto-Routing
-I led this team too. Making an auto-routing system.
+As is repeated a all too often in The Valley, scaling is hard. Facebook sends a mind-blowing number of SMS messages to people every day around the world. I led the effort to re-build this system involved such that it improves delivery rates and provides transparency into how it operates.
 
-Scaling is hard. The numbers are mind-boggling.
+It's much easier to build a complicated, opaque system than a simple, understandable one. I've learned time and again though that the latter is a better option: you can iterate on something you understand, and a simple stack is tautologically easier to maintain.
 
 Registration Flow across Interfaces
 I tech lead Facebook's team responsible for the influx of new users. We monitor Growth, and pay special interest to emerging markets where people are grappling with concepts about online living that we take for granted.
