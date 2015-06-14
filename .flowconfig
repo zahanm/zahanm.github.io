@@ -1,0 +1,9 @@
+[ignore]
+
+[include]
+js/
+
+[libs]
+flowtypes/
+
+[options]
