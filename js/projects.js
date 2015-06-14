@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', startup);
 
 function startup() {
-  var holder = document.getElementById('content');
+  var holder = document.querySelector('.page');
   marked.setOptions({
     gfm: true
   });
