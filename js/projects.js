@@ -23,7 +23,7 @@ function fetchPlain(path, callback) {
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
       if (xhr.status >= 200 && xhr.status < 300) {
-        var data: string = xhr.responseText;
+        var data = xhr.responseText;
         callback(null, data);
       } else {
         callback(xhr, null);
