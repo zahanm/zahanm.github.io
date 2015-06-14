@@ -1,13 +1,12 @@
-/* @flow */
 
 document.addEventListener('DOMContentLoaded', startup);
 
-function startup(): void {
-  var holder: HTMLElement = document.getElementById('content');
+function startup() {
+  var holder = document.getElementById('content');
   marked.setOptions({
     gfm: true
   });
-  fetchPlain('/projects.md', function(err: ?XMLHttpRequest, data: ?string) {
+  fetchPlain('/projects.md', function(err, data) {
     if (err !== null) {
       console.error('could not get markdown from server', err);
       return;
@@ -16,7 +15,7 @@ function startup(): void {
   });
 }
 
-function fetchPlain(path: string, callback) {
+function fetchPlain(path, callback) {
   var xhr = new window.XMLHttpRequest();
   xhr.open('GET', path, true);
   xhr.overrideMimeType("text/plain");
