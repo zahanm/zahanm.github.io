@@ -1,8 +1,16 @@
 == Projects ==
 
 SMS Auto-Routing
+I led this team too. Making an auto-routing system.
 
-Registration flow across platforms + logging
+Scaling is hard. The numbers are mind-boggling.
+
+Registration Flow across Interfaces
+I tech lead Facebook's team responsible for the influx of new users. We monitor Growth, and pay special interest to emerging markets where people are grappling with concepts about online living that we take for granted.
+
+I've spent two years on this team, and in that time we've shifted our focus to people with limited access to the internet through their Android phones. One of my favorite contributions here was a thought-out funnel infrastructure, which doesn't sound too sexy until you realize how key it is to understanding intent and retention.
+
+Ping me for coffee if you want to hear about some of the challenges we've tackled (even if I'm not a big hot-beverage person).
 
 Dog Programming Language
 This was a project with Sep Kamvar and his students to make a programming language that captures the richness of human social interactions. This built on earlier work to create a ["social computing stack"] that allows one to author a program that weaves together regular computational work with tasks that a person can execute.
