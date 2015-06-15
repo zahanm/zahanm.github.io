@@ -16,10 +16,18 @@
 .social {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   font-size: 36px;
+
+  & > * {
+    margin: 10px 0;
+  }
+
+  img {
+    width: 52px;
+  }
 }
 
 @media all and (max-width: @tablet-width) {
