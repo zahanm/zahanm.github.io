@@ -15,10 +15,25 @@ module.exports = function(grunt) {
         }
       }
     },
+    markdown: {
+      all: {
+        files: [
+          {
+            expand: true,
+            src: 'markdown/projects.md',
+            dest: '.',
+            ext: '.html'
+          }
+        ],
+        options: {
+          template: 'markdown/projects.jst',
+        }
+      }
+    },
     watch: {
       dev: {
-        files: ['less/*.less'],
-        tasks: ['less:hotness'],
+        files: ['less/*.less', 'markdown/*.md', 'markdown/*.jst'],
+        tasks: ['less', 'markdown'],
         options: {
           spawn: false
         }
@@ -35,5 +50,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-markdown');
 
 };
