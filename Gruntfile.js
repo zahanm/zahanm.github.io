@@ -31,12 +31,16 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      dev: {
-        files: ['less/*.less', 'markdown/*.md', 'markdown/*.jst'],
-        tasks: ['less', 'markdown'],
-        options: {
-          spawn: false
-        }
+      less: {
+        files: ['less/*.less'],
+        tasks: ['less']
+      },
+      markdown: {
+        files: ['markdown/*.md', 'markdown/*.jst'],
+        tasks: ['markdown']
+      },
+      options: {
+        spawn: false
       }
     },
     connect: {
