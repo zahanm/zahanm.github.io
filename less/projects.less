@@ -1,16 +1,27 @@
 
 @import "base.less";
 
+@para-fixed: 600px;
+@para-fluid: 0.8;
+
 .page {
-  color: darken(white, 30%);
+  color: @text-secondary;
   margin: 60px 0;
 
   flex-flow: column;
   align-items: center;
 
   * {
-    max-width: 600px;
+    max-width: @para-fixed;
+
+    @media all and (max-width: (@para-fixed / @para-fluid)) {
+      max-width: percentage(@para-fluid);
+    }
   }
+}
+
+a {
+  color: @text-secondary;
 }
 
 h1 {

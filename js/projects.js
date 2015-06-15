@@ -18,7 +18,6 @@ function startup() {
 function fetchPlain(path, callback) {
   var xhr = new window.XMLHttpRequest();
   xhr.open('GET', path, true);
-  xhr.overrideMimeType("text/plain");
   xhr.send();
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {

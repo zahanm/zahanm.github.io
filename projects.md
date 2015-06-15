@@ -1,7 +1,7 @@
 ## SMS Auto-Routing
 [facebook] [mobile]
 
-As is repeated all too often in The Valley, scaling is hard. Facebook sends a mind-blowing number of SMS messages to people every day around the world. I led the effort to re-build this system involved such that it improves delivery rates and provides transparency into how it operates.
+As is repeated all too often in The Valley, [scaling](https://sample.link) is hard. Facebook sends a mind-blowing number of SMS messages to people every day around the world. I led the effort to re-build this system involved such that it improves delivery rates and provides transparency into how it operates.
 
 It's much easier to build a complicated, opaque system than a simple, understandable one. I've learned time and again though that the latter is a better option: you can iterate on something you understand, and a simple stack is tautologically easier to maintain.
 

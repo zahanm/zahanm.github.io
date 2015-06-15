@@ -2,19 +2,22 @@
 @tablet-width: 940px;
 @mobile-width: 450px;
 
+@text-primary: white;
+@text-secondary: darken(@text-primary, 30%);
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: @text-primary;
   padding: 3px;
   border-radius: 3px;
 }
 
 .link-reveal:hover a {
-  background-color: white;
+  background-color: @text-primary;
   color: black;
 }
 
@@ -24,5 +27,5 @@ a {
   justify-content: space-around;
 
   background-color: black;
-  color: white;
+  color: @text-primary;
 }
