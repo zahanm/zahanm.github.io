@@ -27,13 +27,6 @@
       "desc": "This is my second year as RCC in the EastFlo residence hall. My job consists of educating residents on all aspects of computing at Stanford, administering the local network and teaching two classes on basic computing and multimedia. I develop and maintain the dorm website eastflo.stanford.edu. As a staff member in a freshman residence hall, I also help plan various programs for the residents."
     },
     {
-      "backdrop": "Stanford",
-      "setting": "Hackathon",
-      "position": "The Extraordinaries",
-      "time": "February 2010",
-      "desc": "Hackathon is a 24-hour coding marathon in which programmers give of their time to projects that bring about social good. I worked with a team to make a web app for The Extraordinaries, that serves as their template for their phone-banking missions."
-    },
-    {
       "backdrop": "Teach For India",
       "position": "Campus Ambassador",
       "time": "September 2009 - September 2010",
@@ -41,7 +34,7 @@
     },
     {
       "backdrop": "Microsoft IT Academy Center",
-      "position": "'Project Shiksha'",
+      "position": "Project Shiksha",
       "time": "Winter 2007",
       "desc": "Undertook an internship in this Microsoft-initiated IT literacy training program for Government school teachers under Microsoft’s global ‘Partners in Learning’ initiative. I spent the internship educating the teachers on how to use the basic functionality of computers to enrich the teaching experience in their classrooms, no matter their subject."
     }

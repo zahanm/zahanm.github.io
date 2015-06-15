@@ -2,20 +2,21 @@
   "children": [
     {
       "employer": "Facebook",
+      "group": "Growth",
       "position": "Software Engineer",
       "time" : "January 2013 - Present",
       "desc": "I am returning to the Social Network for another stint, working on a yet to be decided project; though probably part of the mobile platform."
     },
     {
       "employer": "MIT Media Lab",
-      "group": "Social Computing",
+      "group": "Social Computing Group",
       "position": "Visiting Student",
       "time": "Summer 2012",
       "desc": "I am continuing work with Professor <a href=\"http://kamvar.org\">Sep Kamvar</a> in the <a href=\"http://www.media.mit.edu/research/groups/social-computing\">Social Computing group</a> of the <a href=\"http://media.mit.edu\">Media Lab</a>. We are currently building the <a href=\"http://dog-lang.org\">Dog</a> programming language, which is made to emphasize the role of humans in computational systems. We are exploring the possibilities that this affords to use human and artificial intelligence as part of hybrid approaches to building smarter applications. I'm helping design the language to be as accessible to those without programming experience, and am also building out the ecosystem of supporting libraries and sample applications."
     },
     {
       "employer": "Babelon",
-      "position": "Co-founder and Technical Lead",
+      "position": "Co-founder",
       "time": "Spring 2012",
       "desc": "<a href=\"http://startx.stanford.edu/\">StartX</a>, the Stanford student startup accelerator, chose Babelon to be a part of their Spring 2012 batch of companies. We worked on solving the problems of natural language translation by focussing on extracting meaning from unstructured text. Using the games with a purpose approach, I co-developed an experiment in lie detection that we launched as <a href=\"http://lietome.babelon.co/\">The Deception Game</a>."
     },
@@ -28,6 +29,7 @@
     },
     {
       "employer": "Facebook",
+      "group": "Ads Powereditor",
       "position": "Software Engineering Intern",
       "time": "Summer 2011",
       "desc": "I worked as a software engineer at Facebook with shiny, new Javascript MVC frameworks on client-side web app development. Specifically, I worked on the (now open-sourced) <a href=\"https://github.com/facebook/powereditor\">Powereditor</a> that lets advertisers manage their ad campaigns in bulk, with advanced offline and exporting capabilities. The unprecedented freedom I was afforded to develop this app really helped me grow as an individual and an engineer."
@@ -39,15 +41,15 @@
       "desc": "A team of four Stanford students produced a language education platform that focusses on connecting students around the world who are separated by language barriers. I helped create <a href=\"http://verbling.com\">Verbling's</a> first prototype prior to their joining a <a href=\"http://ycombinator.com/\">Y Combinator</a> session."
     },
     {
-      "employer": "Intern",
+      "employer": "HP Labs",
       "group": "Social Computing Lab",
-      "position": "HP Labs",
+      "position": "Intern",
       "time": "Summer 2010",
       "desc": "I worked with Dr. Bernardo Huberman to build a cloud-based audio streaming service that incorporates elements from location-aware services and social networks. It also explores the connections between the emotional and social aspects of one's online presence. I implemented this service on both mobile and web platforms."
     },
     {
       "employer": "Stanford",
-      "group": "Physics Summer Research Program",
+      "group": "Physics Department",
       "position": "Research Assistant",
       "time": "Summer 2009",
       "desc": "A ten-week intensive summer research program, I was a part of Risa Wechsler’s theoretical physics research group that focusses on understanding large-scale cosmology through theoretical tools like numerical Monte Carlo simulations. I worked on computational data analysis of simulations of structure formation in the early Universe, using the IDL programming language. During the summer, I looked at the properties of dark matter halos and their sub-halos."

@@ -13,48 +13,62 @@
   </script>
 </head>
 <body>
-
   <div class="container">
     <div class="row">
-      <div class="offset3 span9">
+      <div class="offset2 span8">
         <!-- contact info -->
         <section id="contact-info">
           <h2>Zahan Malkani</h2>
           <p>
-            z at zahanm.com |
-            <a href="http://zahanm.com">zahanm.com</a> |
-            PO Box 12485, Stanford, CA
+            z at zahanm.com | San Francisco
           </p>
         </section>
       </div>
     </div>
     <div class="row">
-      <!-- table of contents -->
-      <div class="span3">
-        <ul class="nav nav-list sidenav">
-          <li><a href="#contact-info">Contact Information</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#workexp">Work Experience</a></li>
-          <li><a href="#teachlead">Teaching and Leadership</a></li>
-          <li><a href="#achieve">Achievements</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#references">References</a></li>
-          <li class="divider"></li>
-          <li style="text-align: center;">
-            <a href="/resume.pdf" class="btn" style="display: inline-block">
-              Generate PDF
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- everything else -->
-      <div class="span9">
+      <div class="offset2 span8">
+        <!-- work experience -->
+        <section id="workexp">
+          <div class="page-header">
+            <h2>
+              Work Experience
+              <small>and research</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{#group}}{{ employer }} - {{ group }}{{/group}}
+              {{^group}}{{ employer }} - {{ position }}{{/group}}
+              <small>{{ time }}</small>
+            </h4>
+          </div>
+          {{/children}}
+        </section>
+        <!-- teaching and leadership -->
+        <section id="teachlead">
+          <div class="page-header">
+            <h2>
+              Teaching
+              <small>and leadership</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{#setting}}{{backdrop}} - {{setting}}{{/setting}}
+              {{^setting}}{{backdrop}} - {{position}}{{/setting}}
+              <small>{{ time }}</small>
+            </h4>
+          </div>
+          {{/children}}
+        </section>
         <!-- education -->
         <section id="education">
           <div class="page-header">
             <h2>
               Education
-              <small>mind you, just the formal education</small>
+              <small>formal</small>
             </h2>
           </div>
           {{#children}}
@@ -63,108 +77,8 @@
               {{ school }}
               <small>{{ time }}</small>
             </h4>
-            {{#degrees}}
-              <p>{{.}}</p>
-            {{/degrees}}
           </div>
           {{/children}}
-        </section>
-        <!-- work experience -->
-        <section id="workexp">
-          <div class="page-header">
-            <h2>
-              Work Experience
-              <small>projects that were successful enough to talk about</small>
-            </h2>
-          </div>
-          {{#children}}
-          <div class="child">
-            <h4>
-              {{#group}}{{ position }} - {{ group }} - {{ employer }}{{/group}}
-              {{^group}}{{ position }} - {{ employer }}{{/group}}
-              <small>{{ time }}</small>
-            </h4>
-            <p>
-              {{{ desc }}}
-            </p>
-          </div>
-          {{/children}}
-        </section>
-        <!-- teaching and leadership -->
-        <section id="teachlead">
-          <div class="page-header">
-            <h2>
-              Teaching and Leadership
-              <small>incredibly rewarding, my life outside of work</small>
-            </h2>
-          </div>
-          {{#children}}
-          <div class="child">
-            <h4>
-              {{#setting}}{{position}} - {{setting}} - {{backdrop}}{{/setting}}
-              {{^setting}}{{position}} - {{backdrop}}{{/setting}}
-              <small>{{ time }}</small>
-            </h4>
-            <p>
-              {{{ desc }}}
-            </p>
-          </div>
-          {{/children}}
-        </section>
-        <!-- achievements -->
-        <section id="achieve">
-          <div class="page-header">
-            <h2>
-              Achievements
-              <small>who doesn't like a prize?</small>
-            </h2>
-          </div>
-          {{#children}}
-          <div class="child">
-            <h4>
-              {{ competition }} - {{ position }}
-              <small>{{ time }}</small>
-            </h4>
-            <p>
-              {{{ desc }}}
-            </p>
-          </div>
-          {{/children}}
-        </section>
-        <!-- skills -->
-        <section id="skills">
-          <div class="page-header">
-            <h2>
-              Skills
-              <small>fyi, this is by no means comprehensive</small>
-            </h2>
-          </div>
-          {{#children}}
-          <div class="child">
-            <h4>
-              {{ skill }}
-              <small>{{ label }}</small>
-            </h4>
-            {{#descs}}
-            <p>{{{.}}}</p>
-            {{/descs}}
-            {{^descs}}
-            <p>{{{ desc }}}</p>
-            {{/descs}}
-          </div>
-          {{/children}}
-        </section>
-        <!-- references -->
-        <section id="references">
-          <div class="page-header">
-            <h2>
-              References
-              <small>if you still don't trust me</small>
-            </h2>
-          </div>
-          <div class="child">
-            <h4>Available on request</h4>
-          </div>
         </section>
       </div>
     </div>
