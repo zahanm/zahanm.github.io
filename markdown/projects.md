@@ -38,5 +38,4 @@ We also got a bit of [press](http://techcrunch.com/2011/07/01/facebook-circles/)
 ## Still Reading?
 [github]
 
-Here's my [Github profile](https://github.com/zahanm).
-And this is a short [resumé](/resume.html) of where I've worked in the past.
+See my [Github profile](https://github.com/zahanm), or cross-reference this with my [resumé](/resume.html) listing the organizations where I have worked.
