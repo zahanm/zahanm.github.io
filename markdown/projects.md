@@ -1,16 +1,16 @@
 ## SMS Auto-Routing
 [facebook] [mobile]
 
-As is repeated all too often in The Valley, scaling is hard. Facebook sends a mind-blowing number of SMS messages to people every day around the world. I led the effort to re-build this system involved such that it improves delivery rates and provides transparency into how it operates.
+As is repeated all too often in The Valley, scaling is a hard problem. Facebook sends a mind-numbing number of SMS messages to people every day around the world. I led the effort to re-build the system that chooses a route such that it improves delivery rates and provides transparency into how it operates.
 
-It's much easier to build a complicated, opaque system than a simple, understandable one. I've learned time and again though that the latter is a better option: you can iterate on something you understand, and a simple stack is tautologically easier to maintain.
+It is much easier to build a complicated, opaque system than a simple, understandable one. I've learned time and again that the latter is a better option: you can iterate on something you understand, and a simple stack is by definition easier to maintain.
 
 ## Registration Flow across Interfaces
 [facebook] [mobile] [data analysis]
 
 I tech lead Facebook's team responsible for the influx of new users. We monitor Growth, and pay special interest to emerging markets where people are grappling with concepts about online living that we take for granted.
 
-I've spent two years on this team, and in that time we've shifted our focus to people with limited access to the internet through their Android phones. One of my favorite contributions here was a thought-out funnel infrastructure, which doesn't sound too sexy until you realize how key it is to understanding intent and retention.
+I have spent two years on this team, and in that time we've shifted our focus to people with limited access to the internet through their Android phones. One of my favorite contributions was a logging funnel that I gave a lot of thought; which doesn't sound too sexy until you realize how key it is to understanding intent and retention.
 
 Ping me for coffee if you want to hear about some of the challenges we've tackled (even if I'm not a big hot-beverage person).
 
