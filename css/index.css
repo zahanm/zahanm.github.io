@@ -1,0 +1,80 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.link-reveal a {
+  padding: 3px 3px 6px 3px;
+  border-radius: 3px;
+  color: white;
+}
+.link-reveal:hover a {
+  background-color: white;
+  color: black;
+}
+.page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+.intro {
+  padding-top: 80px;
+  font-size: 72px;
+  margin-bottom: 40px;
+  color: #7f7f7f;
+}
+.intro a {
+  color: white;
+}
+.intro p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 36px;
+}
+.social > * {
+  margin: 20px 0;
+}
+.social img {
+  width: 52px;
+}
+@media all and (max-width: 940px) {
+  .intro {
+    font-size: 48px;
+  }
+}
+@media all and (max-width: 450px) {
+  .page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+    padding-top: 40px;
+  }
+  .intro {
+    font-size: 32px;
+  }
+  .social {
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+  }
+}
