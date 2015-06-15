@@ -1,0 +1,59 @@
+
+@import "base.less";
+
+.intro {
+  padding-top: 80px;
+
+  font-size: 72px;
+  margin-bottom: 40px;
+
+  color: darken(@text-secondary, 20%);
+
+  a {
+    color: @text-primary;
+  }
+
+  p {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+}
+
+.social {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 36px;
+
+  & > * {
+    margin: 20px 0;
+  }
+
+  img {
+    width: 52px;
+  }
+}
+
+@media all and (max-width: @tablet-width) {
+  .intro {
+    font-size: 48px;
+  }
+}
+
+@media all and (max-width: @mobile-width) {
+  .page {
+    flex-flow: column;
+    padding-top: 40px;
+  }
+
+  .intro {
+    font-size: 32px;
+  }
+
+  .social {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}

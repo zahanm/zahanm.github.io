@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zahan Malkani: Resume</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/resume.css">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20019295-1']);
+    _gaq.push(['_setDomainName', 'zahanm.com']);
+    _gaq.push(['_trackPageview']);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="offset2 span8">
+        <!-- contact info -->
+        <section id="contact-info">
+          <h2>Zahan Malkani</h2>
+          <p>
+            z at zahanm.com | San Francisco
+          </p>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset2 span8">
+        <!-- work experience -->
+        <section id="workexp">
+          <div class="page-header">
+            <h2>
+              Work Experience
+              <small>and research</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{#group}}{{ employer }} - {{ group }}{{/group}}
+              {{^group}}{{ employer }} - {{ position }}{{/group}}
+              <small>{{ time }}</small>
+            </h4>
+          </div>
+          {{/children}}
+        </section>
+        <!-- teaching and leadership -->
+        <section id="teachlead">
+          <div class="page-header">
+            <h2>
+              Teaching
+              <small>and leadership</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{#setting}}{{backdrop}} - {{setting}}{{/setting}}
+              {{^setting}}{{backdrop}} - {{position}}{{/setting}}
+              <small>{{ time }}</small>
+            </h4>
+          </div>
+          {{/children}}
+        </section>
+        <!-- education -->
+        <section id="education">
+          <div class="page-header">
+            <h2>
+              Education
+              <small>formal</small>
+            </h2>
+          </div>
+          {{#children}}
+          <div class="child">
+            <h4>
+              {{ school }}
+              <small>{{ time }}</small>
+            </h4>
+          </div>
+          {{/children}}
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/zzquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/resume.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    // Google Analytics
+    var ga = document.createElement('script'); ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src =
+    ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
+    + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  </script>
+</body>
+</html>
