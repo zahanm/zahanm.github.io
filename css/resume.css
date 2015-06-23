@@ -9294,3 +9294,12 @@ section > .child {
 #contact-info {
   text-align: center;
 }
+
+.child h4 > * {
+  font-weight: bold;
+}
+
+.child h4 > :first-child, .child h4 > :last-child {
+  font-weight: normal;
+  color: #666;
+}

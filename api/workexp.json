@@ -3,14 +3,14 @@
     {
       "employer": "Facebook",
       "group": "Growth",
-      "position": "Software Engineer",
+      "position": "Tech Lead",
       "time" : "January 2013 - Present",
-      "desc": "I am returning to the Social Network for another stint, working on a yet to be decided project; though probably part of the mobile platform."
+      "desc": ""
     },
     {
       "employer": "MIT Media Lab",
       "group": "Social Computing Group",
-      "position": "Visiting Student",
+      "position": "Researcher",
       "time": "Summer 2012",
       "desc": "I am continuing work with Professor <a href=\"http://kamvar.org\">Sep Kamvar</a> in the <a href=\"http://www.media.mit.edu/research/groups/social-computing\">Social Computing group</a> of the <a href=\"http://media.mit.edu\">Media Lab</a>. We are currently building the <a href=\"http://dog-lang.org\">Dog</a> programming language, which is made to emphasize the role of humans in computational systems. We are exploring the possibilities that this affords to use human and artificial intelligence as part of hybrid approaches to building smarter applications. I'm helping design the language to be as accessible to those without programming experience, and am also building out the ecosystem of supporting libraries and sample applications."
     },
@@ -24,19 +24,19 @@
       "employer": "Stanford",
       "group": "Social Computing",
       "position": "Research Assistant",
-      "time": "Spring 2011 - Summer 2012",
+      "time": "2011 - 2012",
       "desc": "I am working with Professor <a href=\"http://kamvar.org\">Sep Kamvar</a> of the <a href=\"http://media.mit.edu\">MIT Media Lab</a> on questions of computation using distributed intelligence systems. We are currently working on a platform to make such social computing easy and accessible to developers. Our research was published at the ACM conference <a href=\"http://www.acm.org/uist/uist2011/\">UIST 2011</a>, where we presented our <a href=\"http://www.stanford.edu/~zahanm/papers/jabberwocky.pdf\">implementation results</a>."
     },
     {
       "employer": "Facebook",
       "group": "Ads Powereditor",
-      "position": "Software Engineering Intern",
+      "position": "Intern",
       "time": "Summer 2011",
       "desc": "I worked as a software engineer at Facebook with shiny, new Javascript MVC frameworks on client-side web app development. Specifically, I worked on the (now open-sourced) <a href=\"https://github.com/facebook/powereditor\">Powereditor</a> that lets advertisers manage their ad campaigns in bulk, with advanced offline and exporting capabilities. The unprecedented freedom I was afforded to develop this app really helped me grow as an individual and an engineer."
     },
     {
       "employer": "Verbling",
-      "position": "Technical Lead",
+      "position": "Tech Lead",
       "time": "Spring 2011",
       "desc": "A team of four Stanford students produced a language education platform that focusses on connecting students around the world who are separated by language barriers. I helped create <a href=\"http://verbling.com\">Verbling's</a> first prototype prior to their joining a <a href=\"http://ycombinator.com/\">Y Combinator</a> session."
     },

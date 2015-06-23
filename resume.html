@@ -31,15 +31,15 @@
         <section id="workexp">
           <div class="page-header">
             <h2>
-              Work Experience
-              <small>and research</small>
+              Work
             </h2>
           </div>
           {{#children}}
           <div class="child">
             <h4>
-              {{#group}}{{ employer }} - {{ group }}{{/group}}
-              {{^group}}{{ employer }} - {{ position }}{{/group}}
+              <span>{{ employer }}</span>
+              <span>{{ group }}</span>
+              <span>{{ position }}</span>
               <small>{{ time }}</small>
             </h4>
           </div>
@@ -50,14 +50,14 @@
           <div class="page-header">
             <h2>
               Teaching
-              <small>and leadership</small>
             </h2>
           </div>
           {{#children}}
           <div class="child">
             <h4>
-              {{#setting}}{{backdrop}} - {{setting}}{{/setting}}
-              {{^setting}}{{backdrop}} - {{position}}{{/setting}}
+              <span>{{ backdrop }}</span>
+              <span>{{ setting }}</span>
+              <span>{{ position }}</span>
               <small>{{ time }}</small>
             </h4>
           </div>
@@ -68,13 +68,12 @@
           <div class="page-header">
             <h2>
               Education
-              <small>formal</small>
             </h2>
           </div>
           {{#children}}
           <div class="child">
             <h4>
-              {{ school }}
+              <span>{{ school }}</span>
               <small>{{ time }}</small>
             </h4>
           </div>
