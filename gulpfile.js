@@ -15,7 +15,7 @@ gulp.task('less', function() {
     .pipe(less({
       plugins: [autoprefix]
     }))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('css/'));
 });
 
 gulp.task('watch', function () {
