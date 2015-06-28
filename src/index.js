@@ -1,10 +1,15 @@
+/* @flow */
 'use strict';
 
 class Foo {
+  name: string;
   constructor() {
     this.name = 'fuzzy';
   }
-  name() {
-    return 'my name is' + this.name;
+  sayHello(): string {
+    return 'my name is ' + this.name;
   }
 }
+
+var f: Foo = new Foo();
+console.log(f.sayHello());

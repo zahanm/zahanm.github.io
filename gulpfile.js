@@ -54,4 +54,5 @@ gulp.task('babel', function () {
 gulp.task('watch', function () {
   gulp.watch('less/*.less', ['less']);
   gulp.watch(['markdown/*.md', 'templates/*.jst'], ['markdown']);
+  gulp.watch('src/*.js', ['babel']);
 })
