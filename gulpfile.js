@@ -1,8 +1,9 @@
+'use strict';
 
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
   less = require('gulp-less'),
-  autoprefix = new (require('less-plugin-autoprefix'))()
+  autoprefix = new (require('less-plugin-autoprefix'))(),
   markdown = require('gulp-markdown'),
   tap = require('gulp-tap'),
   path = require('path'),
