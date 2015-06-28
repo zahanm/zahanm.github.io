@@ -1,0 +1,26 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.link-reveal a {
+  padding: 3px 3px 6px 3px;
+  border-radius: 3px;
+  color: white;
+}
+.link-reveal:hover a {
+  background-color: white;
+  color: black;
+}
+.page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  background-color: black;
+  color: white;
+}
