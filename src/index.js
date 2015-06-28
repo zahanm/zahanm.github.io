@@ -7,7 +7,7 @@ class Foo {
     this.name = 'fuzzy';
   }
   sayHello(): string {
-    return 'my name is ' + this.name;
+    return `my name is ${this.name}`;
   }
 }
 
