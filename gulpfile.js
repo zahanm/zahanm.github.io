@@ -11,6 +11,7 @@ var gulp = require('gulp'),
   babel = require('gulp-babel'),
   autoprefix = new (require('less-plugin-autoprefix'))(),
   path = require('path'),
+  spawn = require('child_process').spawn,
   assert = require('assert');
 
 gulp.task('server', function() {
@@ -51,8 +52,14 @@ gulp.task('babel', function () {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('flow', function () {
+  var flow = spawn('flow', ['status', 'src/']);
+  flow.stdout.pipe(process.stdout);
+  flow.stderr.pipe(process.stderr);
+});
+
 gulp.task('watch', function () {
   gulp.watch('less/*.less', ['less']);
   gulp.watch(['markdown/*.md', 'templates/*.jst'], ['markdown']);
-  gulp.watch('src/*.js', ['babel']);
+  gulp.watch('src/*.js', ['flow', 'babel']);
 });
