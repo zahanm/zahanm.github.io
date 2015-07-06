@@ -3,14 +3,15 @@
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
   less = require('gulp-less'),
-  autoprefix = new (require('less-plugin-autoprefix'))(),
   markdown = require('gulp-markdown'),
   tap = require('gulp-tap'),
-  path = require('path'),
-  assert = require('assert'),
   template = require('gulp-template'),
   data = require('gulp-data'),
-  rename = require('gulp-rename');
+  rename = require('gulp-rename'),
+  babel = require('gulp-babel'),
+  autoprefix = new (require('less-plugin-autoprefix'))(),
+  path = require('path'),
+  assert = require('assert');
 
 gulp.task('server', function() {
   connect.server({
@@ -44,7 +45,14 @@ gulp.task('markdown', function () {
     }));
 });
 
+gulp.task('babel', function () {
+  return gulp.src('src/*.js')
+    .pipe(babel())
+    .pipe(gulp.dest('dist/'));
+});
+
 gulp.task('watch', function () {
   gulp.watch('less/*.less', ['less']);
   gulp.watch(['markdown/*.md', 'templates/*.jst'], ['markdown']);
-})
+  gulp.watch('src/*.js', ['babel']);
+});
