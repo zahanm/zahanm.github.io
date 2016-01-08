@@ -9,7 +9,7 @@ a {
   border-radius: 3px;
   color: white;
 }
-.link-reveal:hover a {
+.link-reveal a:hover {
   background-color: white;
   color: black;
 }
@@ -56,10 +56,6 @@ img {
   height: 50px;
   opacity: 0.7;
 }
-a {
-  color: #b3b3b3;
-}
-.link-reveal:hover a {
-  background-color: #b3b3b3;
-  color: black;
+.link-reveal a {
+  font-weight: 500;
 }

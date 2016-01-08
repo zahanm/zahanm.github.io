@@ -9,7 +9,7 @@ a {
   border-radius: 3px;
   color: white;
 }
-.link-reveal:hover a {
+.link-reveal a:hover {
   background-color: white;
   color: black;
 }
