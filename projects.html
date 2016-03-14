@@ -13,15 +13,19 @@
 </head>
 <body class="page link-reveal">
   <h1 id="-larr-"><a href="/">&larr;</a></h1>
+<h2 id="release-engineering-react-native">Release Engineering: React Native</h2>
+<p><img src="/images/phone.png" alt="mobile"></p>
+<p>Facebook has made a pretty bold investment in the cross-platform framework, <a href="https://facebook.github.io/react-native/">React Native</a>, and I&#39;m thinking through the process of shipping apps built with this.</p>
+<p>Having a say in the entire stack that renders an app unlocks some interesting technological solutions to the way we ship mobile apps. Hopefully I&#39;ll soon be able to share our experiences with them.</p>
 <h2 id="sms-auto-routing">SMS Auto-Routing</h2>
-<p><img src="/images/f.png" alt="facebook"> <img src="/images/phone.png" alt="mobile"></p>
+<p><img src="/images/phone.png" alt="mobile"></p>
 <p>As is repeated all too often in The Valley, scaling is a hard problem. Facebook sends a mind-numbing number of SMS messages to people every day around the world. I led the effort to re-build the system that chooses a route such that it improves delivery rates and provides transparency into how it operates.</p>
 <p>It is much easier to build a complicated, opaque system than a simple, understandable one. I&#39;ve learned time and again that the latter is a better option: you can iterate on something you understand, and a simple stack is by definition easier to maintain.</p>
 <h2 id="registration-flow-across-interfaces">Registration Flow across Interfaces</h2>
 <p><img src="/images/f.png" alt="facebook"> <img src="/images/phone.png" alt="mobile"> <img src="/images/data.png" alt="data analysis"></p>
-<p>I tech lead Facebook&#39;s team responsible for the influx of new users. We monitor <a href="http://www.thestreet.com/story/12051899/1/a-sneak-peak-at-whats-really-behind-facebooks-growth.html">Growth</a>, and pay special interest to emerging markets where people are grappling with concepts about online living that we take for granted.</p>
-<p>I have spent two years on this team, and in that time we&#39;ve shifted our focus to people with limited access to the internet through their <a href="https://code.facebook.com/posts/android/">Android</a> phones. One of my favorite contributions was a logging funnel that I gave a lot of thought; which doesn&#39;t sound too sexy until you realize how key it is to understanding intent and retention. For technical reasons, Facebook&#39;s established <a href="https://code.facebook.com/posts/520580318041111/airlock-facebook-s-mobile-a-b-testing-framework/">A/B testing framework</a> didn&#39;t work for us out of the box, so we&#39;ve leveraged my work here to efficiently experiment in native apps.</p>
-<p>Ping me for coffee if you want to hear about some of the challenges we&#39;ve tackled (even if I&#39;m not a big hot-beverage person).</p>
+<p>I used to tech lead Facebook&#39;s team responsible for the influx of new users. We monitor <a href="http://www.thestreet.com/story/12051899/1/a-sneak-peak-at-whats-really-behind-facebooks-growth.html">Growth</a>, and pay special interest to emerging markets where people are grappling with concepts about online living that we take for granted.</p>
+<p>I spent two and a half years on this team, and in that time we&#39;ve shifted our focus to people with limited access to the internet through their <a href="https://code.facebook.com/posts/android/">Android</a> phones. A major contribution of mine was a logging funnel; which doesn&#39;t sound too sexy until you realize how key it is to understanding intent and retention. For technical reasons, Facebook&#39;s established <a href="https://code.facebook.com/posts/520580318041111/airlock-facebook-s-mobile-a-b-testing-framework/">A/B testing framework</a> didn&#39;t work for us out of the box, so we leveraged my work here to efficiently experiment in native apps.</p>
+<p>Ping me for chai / coffee if you want to hear about some of the challenges we&#39;ve tackled.</p>
 <h2 id="dog-programming-language">Dog Programming Language</h2>
 <p><img src="/images/person.png" alt="human"> <img src="/images/lab.png" alt="research"></p>
 <p>This was a project with Sep Kamvar and his students to make <a href="http://www.technologyreview.com/news/429544/new-programming-language-makes-coding-social-apps-easier/">a programming language</a> that captures the richness of human social interactions. This built on earlier work to create a <a href="http://zahanm.s3-website-us-east-1.amazonaws.com/Jabberwocky-UIST2011.pdf">&quot;social computing stack&quot;</a> that allows one to author a program that weaves together regular computational work with tasks that a person can execute.</p>

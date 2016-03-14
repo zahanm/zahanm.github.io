@@ -8,7 +8,7 @@ Facebook has made a pretty bold investment in the cross-platform framework, [Rea
 Having a say in the entire stack that renders an app unlocks some interesting technological solutions to the way we ship mobile apps. Hopefully I'll soon be able to share our experiences with them.
 
 ## SMS Auto-Routing
-![facebook](/images/f.png) ![mobile](/images/phone.png)
+![mobile](/images/phone.png)
 
 As is repeated all too often in The Valley, scaling is a hard problem. Facebook sends a mind-numbing number of SMS messages to people every day around the world. I led the effort to re-build the system that chooses a route such that it improves delivery rates and provides transparency into how it operates.
 
