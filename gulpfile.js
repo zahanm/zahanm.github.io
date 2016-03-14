@@ -37,7 +37,7 @@ gulp.task('markdown', function () {
       return gulp.src('templates/' + name + '.jst')
         .pipe(data(function () {
           assert(file.isBuffer(), 'cannot do streams atm');
-          return { contents: file.contents };
+          return { contents: file.contents.toString() };
         }))
         .pipe(template())
         .pipe(rename(function (path) {
