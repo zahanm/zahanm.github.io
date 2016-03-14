@@ -1,5 +1,12 @@
 # [&larr;](/)
 
+## Release Engineering: React Native
+![mobile](/images/phone.png)
+
+Facebook has made a pretty bold investment in the cross-platform framework, [React Native](https://facebook.github.io/react-native/), and I'm thinking through the process of shipping apps built with this.
+
+Having a say in the entire stack that renders an app unlocks some interesting technological solutions to the way we ship mobile apps. Hopefully I'll soon be able to share our experiences with them.
+
 ## SMS Auto-Routing
 ![facebook](/images/f.png) ![mobile](/images/phone.png)
 
@@ -10,11 +17,11 @@ It is much easier to build a complicated, opaque system than a simple, understan
 ## Registration Flow across Interfaces
 ![facebook](/images/f.png) ![mobile](/images/phone.png) ![data analysis](/images/data.png)
 
-I tech lead Facebook's team responsible for the influx of new users. We monitor [Growth](http://www.thestreet.com/story/12051899/1/a-sneak-peak-at-whats-really-behind-facebooks-growth.html), and pay special interest to emerging markets where people are grappling with concepts about online living that we take for granted.
+I used to tech lead Facebook's team responsible for the influx of new users. We monitor [Growth](http://www.thestreet.com/story/12051899/1/a-sneak-peak-at-whats-really-behind-facebooks-growth.html), and pay special interest to emerging markets where people are grappling with concepts about online living that we take for granted.
 
-I have spent two years on this team, and in that time we've shifted our focus to people with limited access to the internet through their [Android](https://code.facebook.com/posts/android/) phones. One of my favorite contributions was a logging funnel that I gave a lot of thought; which doesn't sound too sexy until you realize how key it is to understanding intent and retention. For technical reasons, Facebook's established [A/B testing framework](https://code.facebook.com/posts/520580318041111/airlock-facebook-s-mobile-a-b-testing-framework/) didn't work for us out of the box, so we've leveraged my work here to efficiently experiment in native apps.
+I spent two and a half years on this team, and in that time we've shifted our focus to people with limited access to the internet through their [Android](https://code.facebook.com/posts/android/) phones. A major contribution of mine was a logging funnel; which doesn't sound too sexy until you realize how key it is to understanding intent and retention. For technical reasons, Facebook's established [A/B testing framework](https://code.facebook.com/posts/520580318041111/airlock-facebook-s-mobile-a-b-testing-framework/) didn't work for us out of the box, so we leveraged my work here to efficiently experiment in native apps.
 
-Ping me for coffee if you want to hear about some of the challenges we've tackled (even if I'm not a big hot-beverage person).
+Ping me for chai / coffee if you want to hear about some of the challenges we've tackled.
 
 ## Dog Programming Language
 ![human](/images/person.png) ![research](/images/lab.png)
