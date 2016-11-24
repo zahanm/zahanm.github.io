@@ -1,11 +1,16 @@
 # [&larr;](/)
 
-## Release Engineering: React Native
+## Web / Mobile Release Tools
+![facebook](/images/f.png) ![mobile](/images/phone.png)
+
+I'm helping think through how we build and release software. Supporting the needs of O(thousands) of developers comes with it's challenges which are fun to tackle.
+
+## React Native
 ![mobile](/images/phone.png)
 
-Facebook has made a pretty bold investment in the cross-platform framework, [React Native](https://facebook.github.io/react-native/), and I'm thinking through the process of shipping apps built with this.
+Facebook has open sourced the cross-platform framework, [React Native](https://facebook.github.io/react-native/), and I'm thinking through the process of shipping apps built with it.
 
-Having a say in the entire stack that renders an app unlocks some interesting technological solutions to the way we ship mobile apps. Hopefully I'll soon be able to share our experiences with them.
+Having a say in the entire stack that renders an app unlocks some interesting technological solutions to the way we ship mobile apps. Hopefully we'll soon be able to share our experiences with them.
 
 ## SMS Auto-Routing
 ![mobile](/images/phone.png)
