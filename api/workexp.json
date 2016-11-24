@@ -2,9 +2,16 @@
   "children": [
     {
       "employer": "Facebook",
+      "group": "Infra: Rel-eng",
+      "position": "Engineer",
+      "time" : "2015 -",
+      "desc": ""
+    },
+    {
+      "employer": "Facebook",
       "group": "Growth",
-      "position": "Tech Lead",
-      "time" : "January 2013 - Present",
+      "position": "Engineer",
+      "time" : "2013 - 2015",
       "desc": ""
     },
     {
@@ -23,7 +30,7 @@
     {
       "employer": "Stanford",
       "group": "Social Computing",
-      "position": "Research Assistant",
+      "position": "Researcher",
       "time": "2011 - 2012",
       "desc": "I am working with Professor <a href=\"http://kamvar.org\">Sep Kamvar</a> of the <a href=\"http://media.mit.edu\">MIT Media Lab</a> on questions of computation using distributed intelligence systems. We are currently working on a platform to make such social computing easy and accessible to developers. Our research was published at the ACM conference <a href=\"http://www.acm.org/uist/uist2011/\">UIST 2011</a>, where we presented our <a href=\"http://www.stanford.edu/~zahanm/papers/jabberwocky.pdf\">implementation results</a>."
     },
@@ -49,8 +56,8 @@
     },
     {
       "employer": "Stanford",
-      "group": "Physics Department",
-      "position": "Research Assistant",
+      "group": "Physics Dept",
+      "position": "Researcher",
       "time": "Summer 2009",
       "desc": "A ten-week intensive summer research program, I was a part of Risa Wechsler’s theoretical physics research group that focusses on understanding large-scale cosmology through theoretical tools like numerical Monte Carlo simulations. I worked on computational data analysis of simulations of structure formation in the early Universe, using the IDL programming language. During the summer, I looked at the properties of dark matter halos and their sub-halos."
     }

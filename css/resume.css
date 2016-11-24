@@ -9301,11 +9301,11 @@ section {
   margin-bottom: 40px;
 }
 
-.child h4 > * {
-  font-weight: bold;
+.child h4 small {
+  color: #666;
 }
 
-.child h4 > :first-child, .child h4 > :last-child {
+.child h4 > :last-child {
   font-weight: normal;
   color: #666;
 }

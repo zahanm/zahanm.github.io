@@ -9,22 +9,16 @@
     },
     {
       "backdrop": "Stanford",
-      "position": "Residential Assistant",
-      "time": "2011 - 2012",
-      "desc": "On a team of 17, I am an RA in the EastFlo residence hall. My primary responsibilities include looking after the freshmen who are new to college and Stanford, and helping them settle in. As a staff, we help foster a healthy community in the dorm and try to make everyone feel apreciated and welcome. Along with my fellow RAs, we are personally responsible for our residents' health and well-being, a responsibility I do not take lightly. We also design fun dorm programming activities, like scavenger hunts and games nights."
-    },
-    {
-      "backdrop": "Stanford",
       "setting": "Physics 91SI",
-      "position": "Initiator",
+      "position": "Initiator / Teacher",
       "time": "Spring 2011",
       "desc": "Together with Alex Ji, I initiated and taught a course, Practical Computing for Scientists at Stanford, aimed at providing students with useful information to write clean and effective software. Targeted at students going into summer research in the natural sciences, where programming plays an ever more important role, we want to provide students with the tools to write better software without them having to major in Computer Science. We provide an introduction to UNIX-like operating systems and use Python as the primary language to learn about data processing and visualization, while learning about other practically useful topics like version control. We are using resources from the Software Carpentry project in our classes."
     },
     {
       "backdrop": "Stanford",
-      "position": "Residential Computer Consultant",
-      "time": "2009 - 2011",
-      "desc": "This is my second year as RCC in the EastFlo residence hall. My job consists of educating residents on all aspects of computing at Stanford, administering the local network and teaching two classes on basic computing and multimedia. I develop and maintain the dorm website eastflo.stanford.edu. As a staff member in a freshman residence hall, I also help plan various programs for the residents."
+      "position": "Residential Assistant, Computer Consultant",
+      "time": "2009 - 2012",
+      "desc": "On a team of 17, I am an RA in the EastFlo residence hall. My primary responsibilities include looking after the freshmen who are new to college and Stanford, and helping them settle in. As a staff, we help foster a healthy community in the dorm and try to make everyone feel apreciated and welcome. Along with my fellow RAs, we are personally responsible for our residents' health and well-being, a responsibility I do not take lightly. We also design fun dorm programming activities, like scavenger hunts and games nights. This is my second year as RCC in the EastFlo residence hall. My job consists of educating residents on all aspects of computing at Stanford, administering the local network and teaching two classes on basic computing and multimedia. I develop and maintain the dorm website eastflo.stanford.edu. As a staff member in a freshman residence hall, I also help plan various programs for the residents."
     },
     {
       "backdrop": "Teach For India",

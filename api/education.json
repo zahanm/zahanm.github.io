@@ -3,19 +3,13 @@
     {
       "school": "Stanford",
       "time": "2008 - 2012",
-      "degrees": [
-        "MS in Computer Science",
-        "BS in Physics, Minor in Computer Science"
-      ],
+      "degrees": "MSc Computer Science, BSc Physics",
       "type": "higher"
     },
     {
       "school": "Cathedral and John Connon School",
       "time": "1995 - 2008",
-      "degrees": [
-        "Indian School Certificate - Grade 12",
-        "Indian Certificate of Secondary Education - Grade 10"
-      ],
+      "degrees": "High School",
       "type": "primary"
     }
   ]
